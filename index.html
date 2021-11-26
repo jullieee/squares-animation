@@ -33,7 +33,7 @@
     }
     @keyframes sc_2 {
       0% {left: 0;}
-      100% {left: 200px;}
+      100% {left: 200px; background-color: #AF7AC5}
     }
     .sc_3 {
       animation-name: sc_3;
@@ -43,9 +43,20 @@
     @keyframes sc_3 {
       0% {top: 0px;}
       25% {top: -100px;}
-      50% {top: -100px; height: 200px;}
+      50% {top: -100px; height: 200px; border-radius: 50%}
       75% {top: -100px;}
       100% {top: 0;}
+    }
+    .sc_4 {
+      animation-name: sc_4;
+      animation-duration: 4s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+    @keyframes sc_4 {
+      0% {left: 0; top: -100px;}
+      50% {left: 200px; top: -100px; border-radius: 50%; height: 150px; width: 150px; background-color: #85C1E9 }
+      100% {left: 400px; top: -100px;}
     }
   </style>
 </head>
@@ -55,5 +66,6 @@
   <div class="sc_1"></div>
   <div class="sc_2"></div>
   <div class="sc_3"></div>
+  <div class="sc_4"></div>
 </body>
 </html>
